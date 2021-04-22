@@ -42,9 +42,9 @@ def get_text_messages(message):
                 audio = r.record(source)
                 text=r.recognize_google(audio,key=None,language='ru-RU')
                 bot.send_message(chat_id=cid,reply_to_message_id=i, text=text)
-    for file in os.listdir("voices"):
-        if file.endswith('.wav'):
-            os.remove(path + file)
+for file in os.listdir("voices"):
+    if file.endswith('.wav'):
+        os.remove(path + file)
     n=int(n)
     n+=1
 bot.polling(none_stop=True, interval=0)
