@@ -1,9 +1,7 @@
 import os
 import telebot
-import requests
 import speech_recognition as sr
 from pydub import AudioSegment
-from pydub.playback import play
 import soundfile as sf
 bot = telebot.TeleBot('1691365384:AAGlZLcR_i4UKT4htvp66LcGhI6eSi3t4Ho')
 @bot.message_handler(content_types=['voice'])
